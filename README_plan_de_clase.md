@@ -1,5 +1,5 @@
 
-## 📚 Tabla de Contenido: Unit Testing e integration test (en 10 a 15 Minutos)
+## 📚 Tabla de Contenido: Unit Testing e integration test (en 15 a 20 Minutos)
 
 | ⏱️ Tiempo | 🎯 Tema | 📝 Descripción | 🔧 Acción |
 |-----------|---------|----------------|-----------|
