@@ -15,8 +15,12 @@ flutter test
 # Ejecutar tests con cobertura
 flutter test --coverage
 
+# ver cobertura
+genhtml coverage/lcov.info -o coverage/html
+open coverage/html/index.html
+
 # Ejecutar un archivo específico de tests
-flutter test test/calculator_test.dart
+flutter test test/common/environment_test.dart
 
 # Ejecutar tests en modo watch
 flutter test --watch
@@ -37,3 +41,7 @@ test/
 Al completar esta guía de 10 minutos, serás capaz de:
 - ✅ Entender qué son las pruebas unitarias
 - ✅ Escribir tests básicos
+
+## A futuro que podemos mejorar
+
+A futuro podemos mejorar en inyección de dependencias, explicar lo que son las arquitecturas emergentes, los golden test y las pruebas de widgets.

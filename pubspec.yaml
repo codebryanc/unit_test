@@ -35,8 +35,16 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
 
+  # Base de datos SQLite
+  sqflite: ^2.3.0
+  path: ^1.8.3
+
 dev_dependencies:
   flutter_test:
+    sdk: flutter
+
+  # Integration tests
+  integration_test:
     sdk: flutter
 
   # The "flutter_lints" package below contains a set of recommended lints to
