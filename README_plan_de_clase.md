@@ -22,7 +22,7 @@ Nunca deberian hacerse manualmente según Robert C Martin
 
 La pregunta es ¿Que parte del 50% deseas que deje de probar?
 
-# Unit test e integration test
+# Unit test e integration test
 
 con Unit test pruebas un componente
 
@@ -53,7 +53,7 @@ Las 3 fases del patrón AAA:
 - Comprueba que el comportamiento fue correcto
 - Usa expect() para validar
 
-# Agrupación de tests
+# Agrupación de tests
 
 - La Agrupación de tests es una técnica para organizar múltiples pruebas relacionadas bajo un mismo contexto usando la función group().
 
