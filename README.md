@@ -1,16 +1,39 @@
-# unit_test
+# Unit Testing en Flutter
 
-A new Flutter project.
+Una guía práctica para implementar y entender las pruebas unitarias y pruebas de integración.
 
-## Getting Started
+## Clase Base: Mobile version code
 
-This project is a starting point for a Flutter application.
+Dentro del código encontraras bases para entender como mostrar y validar la versión de una aplicación
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Comandos Rápidos
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```bash
+# Ejecutar todos los tests
+flutter test
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Ejecutar tests con cobertura
+flutter test --coverage
+
+# Ejecutar un archivo específico de tests
+flutter test test/calculator_test.dart
+
+# Ejecutar tests en modo watch
+flutter test --watch
+```
+
+## 📁 Estructura del Proyecto
+
+```
+test/
+├── widget_test.dart      # Tests de widgets
+├── calculator_test.dart  # Tests de la clase Calculator
+└── models/
+    └── user_test.dart   # Tests de modelos
+```
+
+## 🎯 Objetivos de Aprendizaje
+
+Al completar esta guía de 10 minutos, serás capaz de:
+- ✅ Entender qué son las pruebas unitarias
+- ✅ Escribir tests básicos
