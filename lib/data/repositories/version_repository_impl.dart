@@ -10,11 +10,13 @@ class VersionRepositoryImpl implements VersionRepository {
   static const String _databaseName = 'app_database.db';
 
   Database? _database;
+  bool _isClosed = false;
 
   /// Obtiene la instancia de la base de datos
   Future<Database> get database async {
-    if (_database != null) return _database!;
+    if (_database != null && !_isClosed) return _database!;
     _database = await _initDatabase();
+    _isClosed = false;
     return _database!;
   }
 
@@ -75,13 +77,16 @@ class VersionRepositoryImpl implements VersionRepository {
 
   @override
   Future<void> deleteVersion() async {
+    if (_isClosed) return;
     final db = await database;
     await db.delete(_tableName);
   }
 
   /// Cierra la base de datos
   Future<void> close() async {
-    final db = await database;
-    await db.close();
+    if (_database == null || _isClosed) return;
+    await _database!.close();
+    _isClosed = true;
+    _database = null;
   }
 }

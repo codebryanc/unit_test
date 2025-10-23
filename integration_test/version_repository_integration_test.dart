@@ -12,15 +12,20 @@ void main() {
     setUp(() async {
       // Arrange - Crear instancia del repositorio REAL
       repository = VersionRepositoryImpl();
-
-      // Limpiar la base de datos antes de cada test
-      await repository.deleteVersion();
     });
 
     tearDown(() async {
       // Limpiar después de cada test
-      await repository.deleteVersion();
-      await repository.close();
+      try {
+        await repository.deleteVersion();
+      } catch (e) {
+        // Ignorar si la BD ya está cerrada
+      }
+      try {
+        await repository.close();
+      } catch (e) {
+        // Ignorar si la BD ya está cerrada
+      }
     });
 
     testWidgets('puede guardar y recuperar versión de BD real', (tester) async {
