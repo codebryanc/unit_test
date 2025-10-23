@@ -75,3 +75,12 @@ al probarlo lo vemos así:
 - Realizar pruebas de Widgets con funcionalidades que cambian constantemente
 - Realizar pruebas que no generan valor
 
+# Durante la sesión
+
+Nos olvidamos de incluir porcentaje de pruebas
+
+![porcentaje_pruebas.png](lib/assets/porcentaje_pruebas.png)
+
+Libro de fuentes
+
+![ElLimpiadordeCodigo](lib/assets/ElLimpiadordeCodigo.png)
